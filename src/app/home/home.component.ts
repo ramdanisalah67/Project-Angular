@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HomeComponent implements OnInit{
+  //==Interpolation==
   firstName= "ramdani"
   lastName="salah-eddine"
   WebSite = "www.winopapa.com"
@@ -17,6 +18,30 @@ export class HomeComponent implements OnInit{
     type:"en ligne"
 
   }
+  //==Property Binding==
+  //read image
+  link ="../assets/images/Capture.PNG"
+  div_style="color:red;font-weight:bold;text-transform:uppercase;"
+
+
+//==Evennt Binding==
+number = 1 ;
+
+ increment(){
+  this.number ++
+ }
+
+ decrement(){
+this.number-- ;
+ }
+apply="block"
+ show(){
+  this.apply="block"
+ }
+
+hide(){
+  this.apply="none"
+}
   constructor() { }
   ngOnInit(): void {
 

@@ -1,2 +1,12 @@
 <p>this is home my Name is {{firstName}} {{lastName}}</p>
 <p>j'ai fais un stage {{Stage.type}},ce stage consite a {{Stage.Libelle}}</p>
+<img [src]="link" alt=""><hr>
+<div [style]="div_style"> hello</div><hr>
+<span>the number is {{number}}</span><hr>
+<button (click)="increment()" class="btn btn-primary">incrementer</button><hr>
+<button (click)="decrement()">decrementer</button>
+
+<!--show hide content-->
+<p [style.display]="apply">welcome</p><hr>
+<button (click)="show()">show</button>
+<button (click)="hide()">hide</button>
