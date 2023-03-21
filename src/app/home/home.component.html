@@ -1,17 +1,15 @@
-<p>this is home my Name is {{firstName}} {{lastName}}</p>
-<p>j'ai fais un stage {{Stage.type}},ce stage consite a {{Stage.Libelle}}</p>
-<img [src]="link" alt=""><hr>
-<div [style]="div_style"> hello</div><hr>
-<span>the number is {{number}}</span><hr>
-<button (click)="increment()" class="btn btn-primary">incrementer</button><hr>
-<button (click)="decrement()">decrementer</button>
+<!--Directives-->
+<p *ngIf="a===b">this is p</p>
+<table class="table"><tr><td>name</td>
+</tr><tr  *ngFor="let item of info_users;index as i"><td>{{item}}=>{{i}}</td></tr></table>
 
-<!--show hide content-->
-<p [style.display]="apply">welcome</p><hr>
-<button (click)="show()">show</button>
-<button (click)="hide()">hide</button>
+<!--exmaple-->
+<input type="text" [(ngModel)]="num">
 
-<!--two ways Binding-->
-<p>{{content}}</p>
-tapez quelque chose
-<input type="text" [(ngModel)]="content">
+<p *ngIf="num%2===0">paire</p>
+<p *ngIf="num%2!==0">impaire</p>
+<div [ngSwitch]="num">
+<p *ngSwitchCase="1">first</p>
+<p *ngSwitchCase="2">second</p>
+<p *ngSwitchCase="3">third</p>
+</div>
