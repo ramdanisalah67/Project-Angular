@@ -10,3 +10,8 @@
 <p [style.display]="apply">welcome</p><hr>
 <button (click)="show()">show</button>
 <button (click)="hide()">hide</button>
+
+<!--two ways Binding-->
+<p>{{content}}</p>
+tapez quelque chose
+<input type="text" [(ngModel)]="content">

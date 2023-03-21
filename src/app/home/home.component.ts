@@ -42,6 +42,11 @@ apply="block"
 hide(){
   this.apply="none"
 }
+//==two ways Bindong
+content="this is content"
+
+
+
   constructor() { }
   ngOnInit(): void {
 
