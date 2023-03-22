@@ -1,2 +1,6 @@
-<app-home></app-home>
-<h1>this is {{title}}</h1>
+<p>Accueil</p>
+<a routerLink="/">link to Home Page</a><br>
+<a routerLink="/about">link to about Page</a><br>
+<a [routerLink]="['/profil',myName,myAge]">link to profil Page</a><br>
+
+<router-outlet></router-outlet>

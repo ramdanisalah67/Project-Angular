@@ -1,27 +1,2 @@
-<!--Directives-->
-<h1>learn Angular</h1>
-<p *ngIf="a===b">this is p</p>
-<table class="table"><tr><td>name</td>
-</tr><tr  *ngFor="let item of info_users;index as i"><td>{{item}}=>{{i}}</td></tr></table>
+<p>this is home content</p>
 
-<!--exmaple-->
-<input type="text" [(ngModel)]="num">
-
-<p *ngIf="num%2===0">paire</p>
-<p *ngIf="num%2!==0">impaire</p>
-<div [ngSwitch]="num">
-<p *ngSwitchCase="1">first</p>
-<p *ngSwitchCase="2">second</p>
-<p *ngSwitchCase="3">third</p>
-</div>
-<!--[ngClass]-->
-<div [ngClass]="'mydiv'">hello this is my div1</div>
-<div [ngClass]="my_style_div">hello this is my div2</div>
-<hr>
-<!--[ngStyle]-->
-<p [ngStyle]="{'color':style1,'font-size':style2,'text-decoration':style3}">welcome salah-eddine</p>
-<!--Pipe-->
-<span [ngStyle]="{'color':style1}">hello this is span it used by {{etudiant.name |uppercase}}</span>
-<p>i'm {{etudiant.age}} years old</p>
-<p>{{etudiant | json}}</p>
-<p>{{num|currency:'USD'}}</p>
