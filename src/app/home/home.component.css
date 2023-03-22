@@ -3,3 +3,18 @@ p{
   font-weight: bolder;
   font-size: 50px;
 }
+
+.mydiv
+{
+  background-color: cadetblue;
+  color: white;
+  font-weight: bolder;
+}
+h1{
+  margin: auto;
+  text-align: center;
+  background-color: chocolate;
+  border-radius: 25%;
+  width: 50%;
+}
+
