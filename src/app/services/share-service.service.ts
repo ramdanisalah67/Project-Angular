@@ -8,7 +8,7 @@ data={
   name:"salah-eddine",
   country:"Morroco"
 }
-isAdmin=false
+isAdmin=true
 url="www.NTINFO.com"
   constructor() { }
 }

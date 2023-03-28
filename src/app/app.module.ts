@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ViewComponent } from './view/view.component';
 import { DetailsComponent } from './details/details.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ProfilComponent,
     PageNotFoundComponent,
     ViewComponent,
-    DetailsComponent
+    DetailsComponent,
+    NavBarComponent
 
   ],
   imports: [
