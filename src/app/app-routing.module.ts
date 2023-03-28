@@ -6,10 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfilComponent } from './profil/profil.component';
 import { ViewComponent } from './view/view.component';
-
+import {GuardAdminGuard} from './guards/guard-admin.guard'
 const routes: Routes = [
 {path:'',component:HomeComponent},
-{path:'about',component:AboutComponent},
+{path:'about',component:AboutComponent,canActivate:[GuardAdminGuard]},
 {path:'profil',
 children:[{path:'view/:name',component:ViewComponent},{path:'details',component:DetailsComponent}]
 },

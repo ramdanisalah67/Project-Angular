@@ -10,6 +10,7 @@ import { ProfilComponent } from './profil/profil.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ViewComponent } from './view/view.component';
 import { DetailsComponent } from './details/details.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { DetailsComponent } from './details/details.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+   // {provide:LocationStrategy,useClass:HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

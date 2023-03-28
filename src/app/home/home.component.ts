@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShareServiceService } from '../services/share-service.service';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +24,8 @@ employee={
  "Id":1,
   "Name":"salah-eddine"
 }
-  constructor() {
+  constructor(private myshare:ShareServiceService) {
+    console.log(myshare.data.name)
   }
   ngOnInit(): void {
 
