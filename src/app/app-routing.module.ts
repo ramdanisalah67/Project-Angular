@@ -11,7 +11,7 @@ const routes: Routes = [
 {path:'',component:HomeComponent},
 {path:'about',component:AboutComponent},
 {path:'profil',
-children:[{path:'view',component:ViewComponent},{path:'details',component:DetailsComponent}]
+children:[{path:'view/:name',component:ViewComponent},{path:'details',component:DetailsComponent}]
 },
 {path:'contact',redirectTo:'about',pathMatch:'full'},
 {path:'**',component:PageNotFoundComponent},
